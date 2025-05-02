@@ -52,7 +52,7 @@ function Inicio() {
   return (
     <section 
       id="inicio" 
-      className="relative w-full h-screen bg-gradient-to-br from-Aoscuro to-black overflow-hidden"
+      className="relative w-full h-screen bg-gradient-to-br from-black to-Aoscuro overflow-hidden"
     >
       <div className="animate-fadeIn">
 
@@ -85,10 +85,13 @@ function Inicio() {
           
           
           {/* Iluminación mejorada */}
-          <ambientLight intensity={1} />
+          <ambientLight intensity={0.5} />
           
           
-          <directionalLight position={[0, 0, 9]} intensity={0.5} />
+          <directionalLight position={[0, 0, 5]} intensity={0.5}/>
+
+          <directionalLight position={[0, -8, 0]} intensity={1} castShadow/>
+
 
           <Suspense fallback={null}>
             <Physics gravity={[0, 0, 0]}>
@@ -113,6 +116,8 @@ function Inicio() {
                 height={700}          // Altura del área de renderizado del efecto
               />
             </EffectComposer>*/}
+
+            
 
 
           
