@@ -3,9 +3,12 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/CVweb/', // Nombre exacto de tu repositorio (case-sensitive)
-  plugins: [react()],
+  base: '/CVweb/',
+  server: {
+    host: true, // Permite acceso desde la red local
+  },
   build: {
-    outDir: 'docs', // Cambia dist → docs para GitHub Pages
+    assetsDir: 'assets', // Directorio para assets estáticos
+    emptyOutDir: true,   // Limpia el directorio en cada build
   }
 })

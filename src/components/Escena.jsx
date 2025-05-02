@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei'
 
 
 const Escena = (props) => {
-  const { nodes, materials } = useGLTF('/models/simpleDuck.glb')
+  const { nodes, materials } = useGLTF('./models/simpleDuck.glb')
   return (
     <group {...props} dispose={null} position={[0, -1, 0]} scale={[0.5, 0.5, 0.5]}>
       <mesh
@@ -38,6 +38,6 @@ const Escena = (props) => {
   )
 }
 
-useGLTF.preload('/models/simpleDuck.glb')
+useGLTF.preload('./models/simpleDuck.glb')
 
 export default Escena;
