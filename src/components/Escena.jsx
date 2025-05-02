@@ -7,7 +7,15 @@ import { useGLTF } from '@react-three/drei'
 
 
 const Escena = (props) => {
-  const { nodes, materials } = useGLTF('./models/simpleDuck.glb')
+
+
+
+  const modelPath = import.meta.env.PROD 
+    ? '/CVweb/models/simpleDuck.glb'  // Ruta para producción (GitHub Pages)
+    : '/models/simpleDuck.glb';       // Ruta para desarrollo (localhost)
+
+  // ▶ 2. Carga el modelo con la ruta condicional
+  const { nodes, materials } = useGLTF(modelPath);
   return (
     <group {...props} dispose={null} position={[0, -1, 0]} scale={[0.5, 0.5, 0.5]}>
       <mesh
