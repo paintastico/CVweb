@@ -1,0 +1,75 @@
+import React from 'react';
+import '../index.css';
+import '../constantes/index.js'
+
+
+
+function Tecnologias() {
+  return (
+    <section 
+      id="Tecnologias" 
+      className="w-full flex justify-center items-center text-center text-white bg-black-100"
+    >
+       
+      <div className= "w-full max-w-4xl  p-5 overflow-y-auto " >
+        
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 p-10 ">Tecnologias y herramientas</h1>
+            <p className='text-xl text-center sm:text-lg md:text-2xl'> Estas son algunas de las tecnologias de las que he hecho uso a lo largo de mi formacion y carrera profesional</p>
+            <div class="cajas">
+                    <div className="cajagrupo">
+                        <div className="caja hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200">
+                            <p>HTML 5</p>  
+                            <img src="src/img/ico/html5.svg" alt=""/>
+                                            
+                        </div>
+                        <div className="caja">
+                            <p>CSS</p>  
+                            <img src="src/img/ico/css.svg" alt=""/>
+                                            
+                        </div>
+                        <div className="caja">
+                            <p>MySQL</p>  
+                            <img src="src/img/ico/mysql.svg" alt=""/>          
+                        </div>
+                        <div className="caja">
+                            <p>Javascript</p>  
+                            <img src="src/img/ico/js.svg" alt=""/>          
+                        </div>
+                        <div className="caja">
+                            <p>Github</p>  
+                            <img src="src/img/ico/github.svg" alt=""/>          
+                        </div>
+                        <div className="caja">
+                            <p>Postman</p>  
+                            <img src="src/img/ico/postman.svg" alt=""/>          
+                        </div>
+                        <div className="caja">
+                            <p>Visual Studio</p>  
+                            <img src="src/img/ico/visualstudio.svg" alt=""/>          
+                        </div>
+                        <div className="caja">
+                            <p>Photoshop</p>  
+                            <img src="src/img/ico/ps.svg" alt=""/>          
+                        </div>
+                        <div className="caja">
+                            <p>Blender</p>  
+                            <img src="src/img/ico/blender_icon_512x512.png" alt=""/>          
+                        </div>
+                        <div className="caja">
+                            <p>Office</p>  
+                            <img src="src/img/ico/Office.png" alt=""/>          
+                        </div>
+
+            </div>
+        </div>
+
+        
+        
+        
+
+      </div>
+    </section>
+  );
+}
+
+export default Tecnologias;
