@@ -11,7 +11,7 @@ const Escena = (props) => {
 
 
   const modelPath = import.meta.env.PROD 
-    ? '/CVweb/src/public/models/simpleDuck.glb'  // Ruta para producción (GitHub Pages)
+    ? '/CVweb/models/simpleDuck.glb'  // Ruta para producción (GitHub Pages)
     : './models/simpleDuck.glb'       // Ruta para desarrollo (localhost)
 
   // ▶ 2. Carga el modelo con la ruta condicional
