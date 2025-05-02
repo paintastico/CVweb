@@ -3,6 +3,12 @@ import '../index.css';
 import '../constantes/index.js'
 
 
+const getAssetPath = (path) => {
+    return import.meta.env.PROD 
+      ? `/CVweb${path}`
+      : path;
+};
+
 
 function Tecnologias() {
   return (
@@ -19,45 +25,45 @@ function Tecnologias() {
                     <div className="cajagrupo">
                         <div className="caja hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200">
                             <p>HTML 5</p>  
-                            <img src="./img/ico/html5.svg" alt=""/>
+                            <img src="src/img/ico/html5.svg" alt=""/>
                                             
                         </div>
                         <div className="caja">
                             <p>CSS</p>  
-                            <img src="./img/ico/css.svg" alt=""/>
+                            <img src="src/img/ico/css.svg" alt=""/>
                                             
                         </div>
                         <div className="caja">
                             <p>MySQL</p>  
-                            <img src="./img/ico/mysql.svg" alt=""/>          
+                            <img src="src/img/ico/mysql.svg" alt=""/>          
                         </div>
                         <div className="caja">
                             <p>Javascript</p>  
-                            <img src="./img/ico/js.svg" alt=""/>          
+                            <img src="src/img/ico/js.svg" alt=""/>          
                         </div>
                         <div className="caja">
                             <p>Github</p>  
-                            <img src="./img/ico/github.svg" alt=""/>          
+                            <img src="src/img/ico/github.svg" alt=""/>          
                         </div>
                         <div className="caja">
                             <p>Postman</p>  
-                            <img src="./img/ico/postman.svg" alt=""/>          
+                            <img src="src/img/ico/postman.svg" alt=""/>          
                         </div>
                         <div className="caja">
                             <p>Visual Studio</p>  
-                            <img src="./img/ico/visualstudio.svg" alt=""/>          
+                            <img src="src/img/ico/visualstudio.svg" alt=""/>          
                         </div>
                         <div className="caja">
                             <p>Photoshop</p>  
-                            <img src="./img/ico/ps.svg" alt=""/>          
+                            <img src="src/img/ico/ps.svg" alt=""/>          
                         </div>
                         <div className="caja">
                             <p>Blender</p>  
-                            <img src="./img/ico/blender_icon_512x512.png" alt=""/>          
+                            <img src="src/img/ico/blender_icon_512x512.png" alt=""/>          
                         </div>
                         <div className="caja">
                             <p>Office</p>  
-                            <img src="./img/ico/Office.png" alt=""/>          
+                            <img src="src/img/ico/Office.png" alt=""/>          
                         </div>
 
             </div>
