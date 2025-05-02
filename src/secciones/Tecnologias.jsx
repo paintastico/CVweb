@@ -6,8 +6,9 @@ import '../constantes/index.js'
 const getAssetPath = (path) => {
     return import.meta.env.PROD 
       ? `/CVweb${path}`
-      : path;
+      : `src${path}`;
 };
+
 
 
 function Tecnologias() {
@@ -25,45 +26,45 @@ function Tecnologias() {
                     <div className="cajagrupo">
                         <div className="caja hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200">
                             <p>HTML 5</p>  
-                            <img src="src/img/ico/html5.svg" alt=""/>
+                            <img src={getAssetPath("/img/ico/html5.svg")} alt="HTML5" />
                                             
                         </div>
                         <div className="caja">
                             <p>CSS</p>  
-                            <img src="src/img/ico/css.svg" alt=""/>
+                            <img src={getAssetPath("/img/ico/css.svg")} alt="CSS" />
                                             
                         </div>
                         <div className="caja">
                             <p>MySQL</p>  
-                            <img src="src/img/ico/mysql.svg" alt=""/>          
+                            <img src={getAssetPath("/img/ico/mysql.svg")} alt="MySQL" />          
                         </div>
                         <div className="caja">
                             <p>Javascript</p>  
-                            <img src="src/img/ico/js.svg" alt=""/>          
+                            <img src={getAssetPath("/img/ico/js.svg")} alt="JS" />          
                         </div>
                         <div className="caja">
                             <p>Github</p>  
-                            <img src="src/img/ico/github.svg" alt=""/>          
+                            <img src={getAssetPath("/img/ico/github.svg")} alt="GitHub" />         
                         </div>
                         <div className="caja">
                             <p>Postman</p>  
-                            <img src="src/img/ico/postman.svg" alt=""/>          
+                            <img src={getAssetPath("/img/ico/postman.svg")} alt="Postman" />        
                         </div>
                         <div className="caja">
                             <p>Visual Studio</p>  
-                            <img src="src/img/ico/visualstudio.svg" alt=""/>          
+                            <img src={getAssetPath("/img/ico/visualstudio.svg")} alt="VS" />          
                         </div>
                         <div className="caja">
                             <p>Photoshop</p>  
-                            <img src="src/img/ico/ps.svg" alt=""/>          
+                            <img src={getAssetPath("/img/ico/ps.svg")} alt="Photoshop" />         
                         </div>
                         <div className="caja">
                             <p>Blender</p>  
-                            <img src="src/img/ico/blender_icon_512x512.png" alt=""/>          
+                            <img src={getAssetPath("/img/ico/blender_icon_512x512.png")} alt="Blender" />          
                         </div>
                         <div className="caja">
                             <p>Office</p>  
-                            <img src="src/img/ico/Office.png" alt=""/>          
+                            <img src={getAssetPath("/img/ico/Office.png")} alt="Office" />         
                         </div>
 
             </div>
