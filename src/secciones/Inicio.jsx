@@ -64,7 +64,7 @@ function Inicio() {
           <h2 className="text-2xl md:text-3xl opacity-80 text-white"
           style={{
             textShadow: "2px 4px 12px rgba(0,0,0,0.7)"
-          }}>Analista programador</h2>
+          }}>Analista Programador</h2>
           
           {/* Botón opcional */}
           <div className='md:flex-row pointer-events-auto'>

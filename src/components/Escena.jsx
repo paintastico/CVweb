@@ -10,9 +10,8 @@ const Escena = (props) => {
 
 
 
-  const modelPath = import.meta.env.PROD 
-    ? 'CVweb/public/models/simpleDuck.glb'  // Ruta para producción (GitHub Pages)
-    : './models/simpleDuck.glb'       // Ruta para desarrollo (localhost)
+  const modelPath = `${import.meta.env.BASE_URL}models/simpleDuck.glb`;
+
 
   // ▶ 2. Carga el modelo con la ruta condicional
   const { nodes, materials } = useGLTF(modelPath);
@@ -46,8 +45,6 @@ const Escena = (props) => {
   )
 }
 
-useGLTF.preload(import.meta.env.PROD 
-  ? '/CVweb/public/models/simpleDuck.glb'
-  : '/models/simpleDuck.glb'
-);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/simpleDuck.glb`);
+
 export default Escena;
