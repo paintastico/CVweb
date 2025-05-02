@@ -85,7 +85,9 @@ function Inicio() {
           
           
           {/* Iluminación mejorada */}
-          <ambientLight intensity={0.5} />
+          <ambientLight intensity={0.5}  radius={10}/>
+
+          <spotLight position={[0, 2, -10]} intensity={8}/>
           
           
           <directionalLight position={[0, 0, 5]} intensity={0.5}/>
