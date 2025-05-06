@@ -253,7 +253,6 @@ body {
   view-timeline-name: --skillsLogo;
   view-timeline-axis: block;
   animation-timeline: --skillsLogo;
-  animation-name: zoomIn;
   animation-range: entry 25% cover 30%;
   animation-fill-mode: both;
 }
@@ -265,28 +264,14 @@ body {
 }
 
 
-@keyframes zoomIn{
-
-  0%{
-      opacity: 0;
-      -webkit-transform: scale3d(.3, .3, .3);
-      transform: scale3d(.3, .3, .3);
-  }
-  100% {
-      opacity: 1;
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-  }
-
-  
-}
-
 
 .caja:hover{
   transform: scale(1.2);
   opacity: 1;
-  border: 3px solid rgb(255, 102, 0);
-  border-radius: 5%;
+  border: 5px solid  #7DD3FC;
+  border-radius: 10%;
+  transition: all 0.3s ease;
+  
 }
 
 /* css formacion*/
@@ -322,3 +307,28 @@ body {
   margin-right: 5%;
 }
 
+
+.FondoAnim {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.FondoAnim span {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 20rem;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  animation: aminDesplazamiento 120s linear infinite;
+}
+
+
+@keyframes aminDesplazamiento {
+  0%, 100% { 
+      transform: translateX(-50%);
+  }
+  50% { 
+      transform: translateX(50%);
+  }
+}

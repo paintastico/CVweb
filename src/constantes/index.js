@@ -46,3 +46,10 @@ export const formacionItems = [
       description: "Carrera enfocada en el desarrollo de software, resolución de problemas mediante lógica y construcción de soluciones técnicas funcionales. Aprendí a trabajar con lenguajes de programación, bases de datos, flujos ETL y aplicaciones móviles, desarrollando sistemas que conectan con las necesidades reales de los usuarios. Esta misma página web es un ejemplo práctico de lo aprendido, combinando desarrollo frontend y backend con visión estratégica."
   }
 ];
+
+
+export const sobremiItems = [
+  {
+    description: "Soy Analista Programador con experiencia en desarrollo de software, enfocado en:"
+  },
+]

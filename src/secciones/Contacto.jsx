@@ -12,8 +12,13 @@ function Contacto() {
     >
        
       <div className= "w-full max-w-4xl  p-5 overflow-y-auto " >
+
+        <div>
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 p-10 ">Contacto</h1>
+          <p>Puedes comunicarte conmigo por:</p>
+        </div>
         
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 p-10 ">Contacto</h1>
+            
            
 
       </div>

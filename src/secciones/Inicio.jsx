@@ -52,9 +52,15 @@ function Inicio() {
   return (
     <section 
       id="inicio" 
-      className="relative w-full h-screen bg-gradient-to-br from-black to-Aoscuro overflow-hidden"
+      className="relative w-full h-screen overflow-hidden bg-gradient-to-br from-black to-Aoscuro"
     >
-      <div className="animate-fadeIn">
+      <div className=" animate-fadeIn">
+
+        <div className=" w-full h-screen items-center flex justify-center text-Aoscuro">
+          <div class="FondoAnim">
+          <span>&lt;Felipe Pardo/&gt;</span>
+          </div>
+        </div>
 
         <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center text-white pointer-events-none">
           <h1 className="text-6xl md:text-7xl font-bold mb-4  "
@@ -64,14 +70,26 @@ function Inicio() {
           <h2 className="text-2xl md:text-3xl opacity-80 text-white"
           style={{
             textShadow: "2px 4px 12px rgba(0,0,0,0.7)"
-          }}>Analista Programador :v</h2>
+          }}>Frontend Developer | Santiago, CL</h2>
           
           {/* Botón opcional */}
           <div className='md:flex-row pointer-events-auto'>
             <button className="pointer-events-auto mt-8 px-8 py-3 bg-white text-black font-bold rounded-full 
-            hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200 " href="#contacto">
+            hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200 " href="#sobre-mi">
             Mi CV
             </button>
+          </div><br/>
+
+          <div className="fixed bottom-0  flex flex-col items-center pb-4 pointer-events-auto">
+            <button className="pointer-events-auto mt-8 px-8 py-3 bg-bacl text-white text-2xl font-bold rounded-full 
+            hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200 " href="#sobre-mi"
+            style={{
+              textShadow: "2px 4px 12px rgba(0,0,0,0.7)"
+            }}>
+            Conóceme 👇
+            </button>
+            
+            <p className="text-xs">(o quedate molestando patos)</p>
           </div>
           
 
@@ -80,7 +98,7 @@ function Inicio() {
 
         <Canvas 
           style={{ position: 'absolute', top: 0 }} 
-          camera={{ position: [0, 0, 8], fov: 16 }}
+          camera={{ position: [0, 0, 8], fov: 15 }}
         >
           
           
@@ -124,6 +142,13 @@ function Inicio() {
 
           
         </Canvas>
+
+
+        <div className=" w-full h-screen items-center flex justify-center text-Aoscuro">
+          <div>
+          <span>&lt;Golpea los patos/&gt;</span>
+          </div>
+        </div>
 
       </div>
     </section>

@@ -18,6 +18,13 @@ export default {
       },
       colors: {
 
+        
+
+        Destacado:{
+          DEFAULT: '#7DD3FC',
+
+        },
+
 
 
         Aoscuro:{

@@ -15,13 +15,19 @@ function Tecnologias() {
   return (
     <section 
       id="Tecnologias" 
-      className="w-full flex justify-center items-center text-center text-white bg-black-100"
-    >
+      className="mx-auto w-full flex flex-col md:flex-row justify-center items-center text-center text-white 
+      marginTopBotom-5 bg-Aoscuro p-4 md:p-6 lg:p-8 xl:p-10"
+      style={{
+        width: 'fit-content',
+        borderRadius: '12px', // Más redondeado que 'rounded-lg'
+        border: '3px solid #7DD3FC'
+      }}>
+    
        
       <div className= "w-full max-w-4xl  p-5 overflow-y-auto " >
         
             <h1 className="text-5xl md:text-7xl font-bold mb-4 p-10 ">Tecnologias y herramientas</h1>
-            <p className='text-xl text-center sm:text-lg md:text-2xl'> Estas son algunas de las tecnologias de las que he hecho uso a lo largo de mi formacion y carrera profesional</p>
+            <p className='text-xl text-center sm:text-lg md:text-2xl'> Estas son algunas de las tecnologias con las que he trabajado y he hecho uso a lo largo de mi formacion y carrera profesional o en proyectos personales.</p>
             <div class="cajas">
                     <div className="cajagrupo">
                         <div className="caja hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200">

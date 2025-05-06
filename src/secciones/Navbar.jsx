@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="max-w-8xl mx-auto">
                 <div className="flex items-center justify-between items-center py-5 mx-auto c-space">
                     <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
-                        Felipe Pardo
+                        Felipe Pardo 🦆
                     </a>
                     <button onClick={toggleMenu} className="sm:hidden">
                         <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className="w-6 h-6"/>

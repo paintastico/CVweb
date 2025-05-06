@@ -8,8 +8,8 @@ import Contacto from './secciones/Contacto'
 
 const App = () => {
   return (
-    <div>
-      <main className="w-full h-screen mx-auto">        
+    <div className="min-h-screen">
+      <main className="w-full h-screen mx-auto ">        
         <Navbar/>
         <Inicio/>
         <SobreMi/>
