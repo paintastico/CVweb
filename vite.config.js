@@ -1,15 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/CVweb/',
+  plugins: [react()],
+  base: '/CVweb/', // Configuración para desarrollo local
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  },
   server: {
     host: true, // Permite acceso desde la red local
-  },
-  build: {
-    outDir: 'docs',
-    assetsDir: 'assets', // Directorio para assets estáticos
-    emptyOutDir: true,   // Limpia el directorio en cada build
+    port: 5173
   }
 })
