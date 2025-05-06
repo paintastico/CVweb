@@ -57,7 +57,7 @@ function Inicio() {
       <div className=" animate-fadeIn">
 
         <div className=" w-full h-screen items-center flex justify-center text-Aoscuro">
-          <div class="FondoAnim">
+          <div className="FondoAnim">
           <span>&lt;Felipe Pardo/&gt;</span>
           </div>
         </div>
@@ -80,13 +80,13 @@ function Inicio() {
             </button>
           </div><br/>
 
-          <div className="fixed bottom-0  flex flex-col items-center pb-4 pointer-events-auto">
+          <div className="absolute bottom-8 pointer-events-auto mb-8">
             <button className="pointer-events-auto mt-8 px-8 py-3 bg-bacl text-white text-2xl font-bold rounded-full 
-            hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200 " href="#sobre-mi"
+            hover:scale-110 transform transition-transform duration-200 " 
             style={{
               textShadow: "2px 4px 12px rgba(0,0,0,0.7)"
             }}>
-            Conóceme 👇
+            <a href="#sobre-mi">Conóceme 👇</a>
             </button>
             
             <p className="text-xs">(o quedate molestando patos)</p>
